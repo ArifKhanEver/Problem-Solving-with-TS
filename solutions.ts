@@ -1,4 +1,4 @@
-function multiplyValue(value: number, multiplier: number = 236): number {
+function multiplyValue(value: number, multiplier: number = 2): number {
     return value * multiplier;
 }
 
@@ -21,4 +21,6 @@ function formatCoordinate([latitude, longitude, locationName]: readonly [number,
 }
 
 
-console.log(formatCoordinate([22.35, 91.78, "Chittagong"]))
+function concatenateArrays<T>( ...arrays:T[][]):T[]{
+    return arrays.flat();
+}
