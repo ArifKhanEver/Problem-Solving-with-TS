@@ -24,3 +24,15 @@ function formatCoordinate([latitude, longitude, locationName]: readonly [number,
 function concatenateArrays<T>( ...arrays:T[][]):T[]{
     return arrays.flat();
 }
+
+
+interface Course {
+    title: string;
+    students: number;
+    isPublished: boolean;
+}
+
+function getPopularCourses(courses:Course[], minStudents:number):Course[]{
+    return courses.filter((arr)=> arr.isPublished === true && arr.students > minStudents)
+}
+
