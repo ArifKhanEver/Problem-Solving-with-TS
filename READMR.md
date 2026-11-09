@@ -1,3 +1,5 @@
+npx --yes --package typescript@5.9.3 tsc -p tsconfig.json --watch
+
 # B8A1
 
 ## Assignment: Problem Solving with TypeScript & OOP

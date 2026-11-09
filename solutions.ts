@@ -36,3 +36,10 @@ function getPopularCourses(courses:Course[], minStudents:number):Course[]{
     return courses.filter((arr)=> arr.isPublished === true && arr.students > minStudents)
 }
 
+
+function pluckValues<T, K extends keyof T>(items: T[], key: K):T[K][]{
+    return items.map(item => item[key])
+}
+
+
+
